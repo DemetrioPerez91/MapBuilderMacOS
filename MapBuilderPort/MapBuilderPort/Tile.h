@@ -15,7 +15,7 @@ public:
 	int getTileWidth();
 	int getTileHeight();
 	void setTileCoordinates(int x,int y);
-	void OnCollision(GameObject * other){}
+	//void OnCollision(GameObject * other){}
 	void setTile(int setTile);
 	
 };
