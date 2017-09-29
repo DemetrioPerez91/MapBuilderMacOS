@@ -1,7 +1,7 @@
 #pragma once
-#include"ResourceManager.h"
-//#include "GameController.h"
-#include "CollisionManager.h"
+#include <SDL2/SDL.h>
+//#include"ResourceManager.h"
+//#include "CollisionManager.h"
 
 class GameObject
 {

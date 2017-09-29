@@ -1,6 +1,6 @@
-#include "stdafx.h"
+
 #include "GameObject.h"
-#include "CollisionManager.h"
+//#include "CollisionManager.h"
 
 GameObject::GameObject(SDL_Texture *surface, SDL_Renderer * screen)
 {
@@ -66,5 +66,5 @@ SDL_Rect * GameObject::getSrcRect() { return SrcRect; }
 
 GameObject::~GameObject()
 {
-	CollisionManager::UnregisterPointer(CollisionHandler);
+	//CollisionManager::UnregisterPointer(CollisionHandler);
 }
