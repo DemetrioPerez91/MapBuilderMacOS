@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE1B2D0B1F7E5E9F007A91B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */; };
 		CE1B2D131F7E5F30007A91B3 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */; };
+		CE1B2D451F7E6962007A91B3 /* Tile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D431F7E6962007A91B3 /* Tile.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,8 @@
 		CE1B2D071F7E5E9F007A91B3 /* MapBuilderPort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MapBuilderPort; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2/2.0.6/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		CE1B2D431F7E6962007A91B3 /* Tile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tile.cpp; sourceTree = "<group>"; };
+		CE1B2D441F7E6962007A91B3 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		CE1B2D091F7E5E9F007A91B3 /* MapBuilderPort */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B2D461F7E696C007A91B3 /* Tile */,
 				CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */,
 			);
 			path = MapBuilderPort;
@@ -72,6 +76,15 @@
 				CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE1B2D461F7E696C007A91B3 /* Tile */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B2D431F7E6962007A91B3 /* Tile.cpp */,
+				CE1B2D441F7E6962007A91B3 /* Tile.h */,
+			);
+			name = Tile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE1B2D0B1F7E5E9F007A91B3 /* main.cpp in Sources */,
+				CE1B2D451F7E6962007A91B3 /* Tile.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
