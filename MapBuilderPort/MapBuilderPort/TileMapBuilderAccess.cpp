@@ -1,4 +1,4 @@
-
+/*
 #include "TileMapBuilderAccess.h"
 
 
@@ -264,7 +264,7 @@ void TileMapBuilderAccess::editorInputManagement()
 	}
 
 }
-
+*/
 
 
 
