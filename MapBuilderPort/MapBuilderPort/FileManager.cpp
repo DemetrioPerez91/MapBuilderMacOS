@@ -1,4 +1,5 @@
-#include "stdafx.h"
+
+#include <stdio.h>
 #include "FileManager.h"
 FileManager * FileManager::ms_pInstance = NULL;
 
@@ -15,7 +16,7 @@ int FileManager::getTimeStamp(std::string url)
 	{
 		printf("error");
 	}
-	timeStamp = st.st_mtime;
+	timeStamp = int(st.st_mtime);
 	return timeStamp;
 }
 void FileManager::loadFile()
@@ -37,38 +38,43 @@ void FileManager::loadFile()
 		tileNumbers.pop_back();
 	}
 
-	if(fopen_s(&mFile, tempURL.c_str(),"r")!=0)
+    
+    mFile = fopen(tempURL.c_str(), "r");
+    
+	if(mFile == NULL)
 	{
-		printf("Could not load map file: %s \n",url);
+		printf("Could not load map file: %s \n",tempURL.c_str());
 	}
 	else
 	{
-		char tempURL [256];
-		fscanf_s(mFile, "TILE_SET %s ;\n", &tempURL, sizeof(tempURL));
-
-		printf("%s\n", tempURL);
-		atlasURL = tempURL;
-		fscanf_s(mFile, "SIZE %d;\n", &size);
-		printf("SIZE %d\n",size);
+        //Reading map file
+        //TO DO: Split in testable method
+		char tileSetURL ;
+        fscanf(mFile, "TILE_SET %s ;\n",&tileSetURL );
+		printf("%c\n", tileSetURL);
+		atlasURL = tileSetURL;
+		fscanf(mFile, "SIZE %d;\n", &mapSize);
+		printf("SIZE %d\n",mapSize);
 		printf("FILE LOADED \n");
-		fscanf_s(mFile, "LINEBREAKS %d;\n", &lineBreak);
+		fscanf(mFile, "LINEBREAKS %d;\n", &lineBreak);
 		printf("LineBrakes %i \n", lineBreak);
-		fscanf_s(mFile, "COLLUMNS %d;\n", &collumns);
+		fscanf(mFile, "COLLUMNS %d;\n", &collumns);
 		printf("COLLUMNS %i \n", collumns);
-		state = READ_MAP;
+		
+        state = READ_MAP;
 		int temp=0;
 		int i = 0;
 		int j = 0;
 		while(state!= CLOSE_MAP)
 		{
-			fscanf_s(mFile, " %d,", &temp);
+			fscanf(mFile, " %d,", &temp);
 			printf("%i", temp);
 			tileNumbers.push_back(temp);
 			
 			i++;
 			if(i==collumns)
 			{
-				fscanf_s(mFile,"\n");
+				fscanf(mFile,"\n");
 				printf("\n");
 				i = 0;
 				j++;
@@ -106,7 +112,7 @@ void FileManager::writeFile(Tile * tiles,int nTiles)
 	std::string fileText = "";
 	std::string nCollums = std::to_string(collumns);
 	std::string lBreaks = std::to_string(lineBreak);
-	std::string tileSize = std::to_string(size);
+	std::string tileSize = std::to_string(mapSize);
 	fileText = "TILE_SET " + atlasURL + " ;\nSIZE " + tileSize + ";\nLINEBREAKS " + lBreaks + ";\n" + "COLLUMNS " + nCollums + ";\n";
 	for (int i = 0; i < nTiles; i++)
 	{
@@ -127,7 +133,7 @@ void FileManager::writeFile(Tile * tiles,int nTiles)
 	}
 	
 	//printf(fileText.c_str());
-	fopen_s(&mFile, tempURL.c_str(), "w");
+	mFile = fopen( tempURL.c_str(), "w");
 	fputs(fileText.c_str(),mFile);
 	fclose(mFile);
 
@@ -145,7 +151,7 @@ int FileManager::checkForUpdates()
 	{
 		printf( "error");
 	}
-	int newdate = st.st_mtime;
+	int newdate = int(st.st_mtime);
 	switch(map)
 	{
 		case ZELDA:
@@ -172,6 +178,7 @@ int FileManager::checkForUpdates()
 			}
 		break;
 	}
+    return 0;
 }
 
 

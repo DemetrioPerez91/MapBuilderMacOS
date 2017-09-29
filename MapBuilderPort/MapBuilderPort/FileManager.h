@@ -2,6 +2,7 @@
 #ifndef FILE_MANAGER
 #define FILE_MANAGER
 #include <string>
+#include <stdio.h>
 #include <vector>
 #include "Tile.h"
 #include <sys/types.h>
@@ -13,7 +14,7 @@ protected:
 	FileManager();
 	~FileManager();
 	FileManager(const FileManager &) {}
-	FileManager& operator =(const FileManager &) {}
+	//FileManager& operator =(const FileManager &) {}
 
 public:
 	static FileManager * GetInstance() {
@@ -32,12 +33,12 @@ public:
 	 std::string url2 = "Data\\Maps\\zeldaMaps\\map.map";
 	 std::vector<int> tileNumbers;
 	 int collumns = 0;
-	 int size = 0;
+	 int mapSize = 0;
 	 std::string atlasURL;
 	 int map;
 	 int pokemonTimeStamp = 0;
 	 int zeldaTimeStamp = 0;
-	 FILE * FileManager::mFile = NULL;
+	 FILE * mFile = NULL;
 	 int state = 0;
 	 int lineBreak = 0;
 	 void loadFile();
