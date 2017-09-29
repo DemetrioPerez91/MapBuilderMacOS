@@ -14,6 +14,8 @@
 		CE1B2D4D1F7E6A8F007A91B3 /* CollisionManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D4B1F7E6A8F007A91B3 /* CollisionManager.cpp */; };
 		CE1B2D511F7E6B37007A91B3 /* ResourceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D4F1F7E6B37007A91B3 /* ResourceManager.cpp */; };
 		CE1B2D751F7E6BF9007A91B3 /* libSDL2_image-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2D6F1F7E6BEB007A91B3 /* libSDL2_image-2.0.0.dylib */; };
+		CE1B2D771F7E6C5E007A91B3 /* TileMapBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D761F7E6C5E007A91B3 /* TileMapBuilder.cpp */; };
+		CE1B2D7A1F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D781F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +62,9 @@
 		CE1B2D711F7E6BEB007A91B3 /* libSDL2_image.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libSDL2_image.dylib; sourceTree = "<group>"; };
 		CE1B2D731F7E6BEB007A91B3 /* SDL2_image.pc */ = {isa = PBXFileReference; lastKnownFileType = text; path = SDL2_image.pc; sourceTree = "<group>"; };
 		CE1B2D741F7E6BEB007A91B3 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		CE1B2D761F7E6C5E007A91B3 /* TileMapBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapBuilder.cpp; sourceTree = "<group>"; };
+		CE1B2D781F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TileMapBuilderAccess.cpp; sourceTree = "<group>"; };
+		CE1B2D791F7E6CA3007A91B3 /* TileMapBuilderAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileMapBuilderAccess.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +100,13 @@
 		CE1B2D091F7E5E9F007A91B3 /* MapBuilderPort */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B2D7B1F7E6CA7007A91B3 /* TileMapBuilderAccess */,
 				CE1B2D521F7E6B3C007A91B3 /* ResourceManager */,
 				CE1B2D4E1F7E6A93007A91B3 /* CollisionManager */,
 				CE1B2D471F7E69D2007A91B3 /* GameObject */,
 				CE1B2D461F7E696C007A91B3 /* Tile */,
 				CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */,
+				CE1B2D761F7E6C5E007A91B3 /* TileMapBuilder.cpp */,
 			);
 			path = MapBuilderPort;
 			sourceTree = "<group>";
@@ -282,6 +289,15 @@
 			path = pkgconfig;
 			sourceTree = "<group>";
 		};
+		CE1B2D7B1F7E6CA7007A91B3 /* TileMapBuilderAccess */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B2D781F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp */,
+				CE1B2D791F7E6CA3007A91B3 /* TileMapBuilderAccess.h */,
+			);
+			name = TileMapBuilderAccess;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,9 +358,11 @@
 			files = (
 				CE1B2D511F7E6B37007A91B3 /* ResourceManager.cpp in Sources */,
 				CE1B2D4D1F7E6A8F007A91B3 /* CollisionManager.cpp in Sources */,
+				CE1B2D771F7E6C5E007A91B3 /* TileMapBuilder.cpp in Sources */,
 				CE1B2D0B1F7E5E9F007A91B3 /* main.cpp in Sources */,
 				CE1B2D451F7E6962007A91B3 /* Tile.cpp in Sources */,
 				CE1B2D4A1F7E69E0007A91B3 /* GameObject.cpp in Sources */,
+				CE1B2D7A1F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

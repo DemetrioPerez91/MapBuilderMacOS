@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <SDL2/SDL.h>
+#include "TileMapBuilderAccess.h"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
