@@ -29,8 +29,8 @@ public:
 			ms_pInstance = NULL;
 		}
 	}
-	 std::string url = "Data\\Maps\\PokemonMaps\\map.map";
-	 std::string url2 = "Data\\Maps\\zeldaMaps\\map.map";
+	 std::string url = "Data/Maps/PokemonMaps/map.map";
+	 std::string url2 = "Data/Maps/zeldaMaps/map.map";
 	 std::vector<int> tileNumbers;
 	 int collumns = 0;
 	 int mapSize = 0;
