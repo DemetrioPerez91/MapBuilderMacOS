@@ -1,6 +1,5 @@
 
 #include "GameObject.h"
-#include "CollisionManager.h"
 
 GameObject::GameObject(SDL_Texture *surface, SDL_Renderer * screen)
 {
