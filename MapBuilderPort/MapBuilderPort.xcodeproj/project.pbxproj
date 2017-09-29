@@ -18,6 +18,7 @@
 		CE1B2D7A1F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D781F7E6CA3007A91B3 /* TileMapBuilderAccess.cpp */; };
 		CE1B2D7E1F7E6E3B007A91B3 /* FileManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D7C1F7E6E3B007A91B3 /* FileManager.cpp */; };
 		CE1B2D821F7E7C18007A91B3 /* MapBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D801F7E7C18007A91B3 /* MapBuilder.cpp */; };
+		CE1B2D861F7E7CE6007A91B3 /* InputManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D841F7E7CE6007A91B3 /* InputManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,8 @@
 		CE1B2D7D1F7E6E3B007A91B3 /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		CE1B2D801F7E7C18007A91B3 /* MapBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MapBuilder.cpp; sourceTree = "<group>"; };
 		CE1B2D811F7E7C18007A91B3 /* MapBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapBuilder.h; sourceTree = "<group>"; };
+		CE1B2D841F7E7CE6007A91B3 /* InputManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = InputManager.cpp; sourceTree = "<group>"; };
+		CE1B2D851F7E7CE6007A91B3 /* InputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 		CE1B2D091F7E5E9F007A91B3 /* MapBuilderPort */ = {
 			isa = PBXGroup;
 			children = (
+				CE1B2D871F7E7CEA007A91B3 /* InputManager */,
 				CE1B2D831F7E7C26007A91B3 /* MapBuilder */,
 				CE1B2D7F1F7E6E42007A91B3 /* FileManager */,
 				CE1B2D7B1F7E6CA7007A91B3 /* TileMapBuilderAccess */,
@@ -324,6 +328,15 @@
 			name = MapBuilder;
 			sourceTree = "<group>";
 		};
+		CE1B2D871F7E7CEA007A91B3 /* InputManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B2D841F7E7CE6007A91B3 /* InputManager.cpp */,
+				CE1B2D851F7E7CE6007A91B3 /* InputManager.h */,
+			);
+			name = InputManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +399,7 @@
 				CE1B2D4D1F7E6A8F007A91B3 /* CollisionManager.cpp in Sources */,
 				CE1B2D771F7E6C5E007A91B3 /* TileMapBuilder.cpp in Sources */,
 				CE1B2D7E1F7E6E3B007A91B3 /* FileManager.cpp in Sources */,
+				CE1B2D861F7E7CE6007A91B3 /* InputManager.cpp in Sources */,
 				CE1B2D0B1F7E5E9F007A91B3 /* main.cpp in Sources */,
 				CE1B2D451F7E6962007A91B3 /* Tile.cpp in Sources */,
 				CE1B2D4A1F7E69E0007A91B3 /* GameObject.cpp in Sources */,
