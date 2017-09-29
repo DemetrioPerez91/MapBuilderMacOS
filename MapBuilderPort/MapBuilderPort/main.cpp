@@ -10,13 +10,28 @@
 #include <SDL2/SDL.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    if (SDL_Init(SDL_INIT_EVERYTHING)<0)
+   
+    TMV = new TileMapViewer();
+    TBA = new TileMapBuilderAccess();
+    if (!TBA->init())
     {
-       std::cout <<SDL_GetError();
+        printf("failed to initialize TileMapBuilder");
+    }
+    else
+    {
+        
     }
 
+    
+    
+    
+    while (TBA->active)
+    {
+        TBA->editorInputManagement();
+        //TMV->refresh();
+    }
+    
+    
     
     return 0;
 }
