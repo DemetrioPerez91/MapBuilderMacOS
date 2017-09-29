@@ -31,7 +31,7 @@ public:
 	static void increaseTileSize();
 	static void decreaseTileSize();
 	static void refreshMap();
-	static void	MapBuilder::paintSquare(int x,int  y);
+	static void	paintSquare(int x,int  y);
 	static int findCoordinate(int x);
 	static int findPosition(int x, int y);
 	static void switchTileFwd();

@@ -22,8 +22,8 @@ void MapBuilder::loadMap()
 	int tileYCord = 0;
 	int tileXCord = 0;
 	nCollums = FileManager::GetInstance()->collumns;
-	nTiles = FileManager::GetInstance()->tileNumbers.size();
-	tileSize = FileManager::GetInstance()->size;
+	nTiles = int(FileManager::GetInstance()->tileNumbers.size());
+	tileSize = FileManager::GetInstance()->mapSize;
 	TILES = new Tile[nTiles];
 	for (unsigned int i = 0; i < nTiles; i++)
 	{
