@@ -14,7 +14,7 @@ int FileManager::getTimeStamp(std::string url)
 	int ierr = stat(url.c_str(), &st);
 	if (ierr != 0)
 	{
-		printf("error");
+		printf("getTimeStamp Error\n");
 	}
 	timeStamp = int(st.st_mtime);
 	return timeStamp;
