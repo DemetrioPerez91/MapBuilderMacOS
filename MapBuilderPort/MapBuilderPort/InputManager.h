@@ -1,6 +1,5 @@
-#pragma once
-#include "SDL2\SDL.h"
-#include "SDL2\SDL_image.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_image.h>
 
 class InputManager
 {
@@ -13,11 +12,11 @@ public:
 	static int gameStates;
 	static int heroController;
 	static bool click;
-	static enum HEROCONTROLS
+    enum HEROCONTROLS
 	{
 		LEFT = 1, RIGHT, UP,DOWN,SHOOT
 	};
-	static enum GameState
+    enum GameState
 	{
 		PAUSE,
 		REFRESH,
@@ -33,7 +32,7 @@ public:
 		CHECK_FOR_CHANGES,
 		QUIT
 	};
-	static struct mouseState
+    struct mouseState
 	{
 		bool click = false;
 	};

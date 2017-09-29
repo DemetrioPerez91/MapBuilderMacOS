@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "InputManager.h"
 SDL_Event e;
 int InputManager::gameStates;
