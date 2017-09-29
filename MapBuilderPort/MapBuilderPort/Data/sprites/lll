@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<Sprite>
+<Textures>
+<Texture FileName="C:\Users\demetrio.perez\Desktop\Technichal Training\sdlTraining\TopViewGame\TileMapBuilder\Data\sprites\7584.png" Height="3024" ImageID="0" Type="FILE" Width="1111"/>
+</Textures>
+<Modules>
+<Module Height="0.048225306" ModuleID="0" Name="module0" TextureID="0" Type="RECTANGLE" Width="0.3292829" X="0.2910291" Y="0.06338183"/>
+<Module Height="0.047949735" ModuleID="1" Name="module1" TextureID="0" Type="RECTANGLE" Width="0.37803778" X="0.33528355" Y="0.061452817"/>
+</Modules>
+<Frames>
+<Frame FrameID="0" Name="frame0">
+<Module ModuleID="0">
+<Position X="0.0" Y="0.0"/>
+<Scale X="1.0" Y="1.0"/>
+<Color A="1.0" B="1.0" G="1.0" R="1.0"/>
+</Module>
+</Frame>
+<Frame FrameID="1" Name="frame1">
+<Module ModuleID="1">
+<Position X="0.0" Y="0.0"/>
+<Scale X="1.0" Y="1.0"/>
+<Color A="1.0" B="1.0" G="1.0" R="1.0"/>
+</Module>
+</Frame>
+</Frames>
+<Animations>
+<FramebasedAnimation AnimationID="0" Name="animation0">
+<FrameInAnimation FrameID="0" FrameInAnimationID="411" Time="1" X="0.0" Y="0.0"/>
+<FrameInAnimation FrameID="1" FrameInAnimationID="640" Time="1" X="0.0" Y="0.0"/>
+</FramebasedAnimation>
+<KeyframeAnimation AnimationID="1" End="25" Name="animation1" Start="0">
+<Object Name="Animated Element" ObjectID="622">
+<Keyframe Frame="0" Object="FID: 0" Visible="true">
+<Position X="0.0" Y="0.0"/>
+<Scale X="1.0" Y="1.0"/>
+<Rotation>0.0</Rotation>
+<Alpha>1.0</Alpha>
+</Keyframe>
+<Keyframe Frame="25" Object="FID: 1" Visible="true">
+<Position X="69.900955" Y="-0.017042518"/>
+<Scale X="1.0" Y="1.0"/>
+<Rotation>0.0</Rotation>
+<Alpha>1.0</Alpha>
+</Keyframe>
+</Object>
+</KeyframeAnimation>
+</Animations>
+</Sprite>
