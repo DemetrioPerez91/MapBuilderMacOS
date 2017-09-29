@@ -20,8 +20,8 @@ public:
 		Game
 	};
 	bool active = true;
-	int SCREEN_WIDTH = 1024;
-	int SCREEN_HEIGHT = 1024;
+	int SCREEN_WIDTH = 650;
+	int SCREEN_HEIGHT = 650;
 
 	//EDITOR WIDNOW
 	SDL_Window * gWindow = NULL;

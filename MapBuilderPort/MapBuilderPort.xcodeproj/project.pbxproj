@@ -174,10 +174,10 @@
 			children = (
 				CE1B2D8D1F7E8436007A91B3 /* Data */,
 				CE1B2D8B1F7E7D83007A91B3 /* TileMapViewer */,
+				CE1B2D7B1F7E6CA7007A91B3 /* TileMapBuilderAccess */,
 				CE1B2D871F7E7CEA007A91B3 /* InputManager */,
 				CE1B2D831F7E7C26007A91B3 /* MapBuilder */,
 				CE1B2D7F1F7E6E42007A91B3 /* FileManager */,
-				CE1B2D7B1F7E6CA7007A91B3 /* TileMapBuilderAccess */,
 				CE1B2D521F7E6B3C007A91B3 /* ResourceManager */,
 				CE1B2D4E1F7E6A93007A91B3 /* CollisionManager */,
 				CE1B2D471F7E69D2007A91B3 /* GameObject */,
