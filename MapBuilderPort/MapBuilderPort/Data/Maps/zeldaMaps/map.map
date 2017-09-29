@@ -1,4 +1,4 @@
-TILE_SET DATA\Tiles\tilesAtlas.png ;
+TILE_SET DATA/Tiles/tilesAtlas.png ;
 SIZE 32;
 LINEBREAKS 32;
 COLLUMNS 32;

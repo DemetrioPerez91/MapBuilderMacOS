@@ -49,9 +49,9 @@ void FileManager::loadFile()
 	{
         //Reading map file
         //TO DO: Split in testable method
-		char tileSetURL ;
-        fscanf(mFile, "TILE_SET %s ;\n",&tileSetURL );
-		printf("%c\n", tileSetURL);
+		char tileSetURL[256] ;
+        fscanf(mFile, "TILE_SET %256s ;\n",&tileSetURL );
+		printf("%s\n", tileSetURL);
 		atlasURL = tileSetURL;
 		fscanf(mFile, "SIZE %d;\n", &mapSize);
 		printf("SIZE %d\n",mapSize);
