@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE1B2D0B1F7E5E9F007A91B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */; };
+		CE1B2D131F7E5F30007A91B3 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		CE1B2D071F7E5E9F007A91B3 /* MapBuilderPort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MapBuilderPort; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../usr/local/Cellar/sdl2/2.0.6/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B2D131F7E5F30007A91B3 /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +46,7 @@
 			children = (
 				CE1B2D091F7E5E9F007A91B3 /* MapBuilderPort */,
 				CE1B2D081F7E5E9F007A91B3 /* Products */,
+				CE1B2D111F7E5F30007A91B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +64,14 @@
 				CE1B2D0A1F7E5E9F007A91B3 /* main.cpp */,
 			);
 			path = MapBuilderPort;
+			sourceTree = "<group>";
+		};
+		CE1B2D111F7E5F30007A91B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE1B2D121F7E5F30007A91B3 /* libSDL2-2.0.0.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +230,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2UR7A92HF8;
+				HEADER_SEARCH_PATHS = /Usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.6/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -226,6 +243,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 2UR7A92HF8;
+				HEADER_SEARCH_PATHS = /Usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/sdl2/2.0.6/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
